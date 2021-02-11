@@ -24,7 +24,7 @@ export const SearchBanner = ({
       {/* <AddMovie addMovieModal={addMovieModal} /> */}
       <SearchContent>
         <SearchTitle>FIND YOUR MOVIE</SearchTitle>
-        <Search />
+        <Search/>
       </SearchContent>
 
       {/* <Modal open={movieModal} onClose={() => setMovieModal(false)}>

@@ -7,8 +7,8 @@ function App() {
   return (
     <div className="App">
       <div className="netflix-header">
-        <img src={logo} className="netflix--logo" alt="nt-log"/>
-        <AddMovie />
+        {/* <img src={logo} className="netflix--logo" alt="nt-log"/> */}
+        {/* <AddMovie /> */}
         <SearchBanner />
       </div>
     </div>
