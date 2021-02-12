@@ -1,21 +1,21 @@
 import React, { useState } from "react";
 import { Button } from "../../styles/buttonStyles";
 import { SearchContainer } from "./indexStyles";
-// import { fetchSearch } from "../../actions/moviesAction";
-// import { useDispatch } from "react-redux";
+import { fetchSearch } from "../../actions/moviesAction";
+import { useDispatch } from "react-redux";
 
 export const Search = () => {
-//   const dispatch = useDispatch();
+  const dispatch = useDispatch();
   const [textInput, setTextInput] = useState("");
   const inputHandler = (e) => {
     setTextInput(e.target.value);
   };
 
-//   const submitSearch = (e) => {
-//     e.preventDefault();
-//     dispatch(fetchSearch(textInput));
-//     setTextInput("");
-//   };
+  const submitSearch = (e) => {
+    e.preventDefault();
+    dispatch(fetchSearch(textInput));
+    setTextInput("");
+  };
 
   return (
     <SearchContainer>
@@ -26,7 +26,7 @@ export const Search = () => {
         type="text"
       />
       <Button
-        // onClick={textInput.length ? submitSearch : null}
+        onClick={textInput.length ? submitSearch : null}
         type="submit"
         primary
       >
