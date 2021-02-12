@@ -10,6 +10,7 @@ function App() {
         {/* <img src={logo} className="netflix--logo" alt="nt-log"/> */}
         {/* <AddMovie /> */}
         <SearchBanner />
+        <h1> hello </h1>
       </div>
     </div>
   );
