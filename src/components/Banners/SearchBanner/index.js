@@ -3,6 +3,8 @@ import { Search } from "../../Search";
 // import AddMovie from "../../AddMovie/AddMovie";
 // import Modal from "../../Modal/Modal";
 // import MovieModal from "../../MovieModal/MovieModal";
+import logo from '../../../assets/images/netflix-logo.png';
+
 
 import {
   SearchTitle,
@@ -21,6 +23,7 @@ export const SearchBanner = ({
 }) => {
   return (
     <SearchBannerContainer>
+      <img src={logo} className="netflix--logo" alt="nt-log"/>
       {/* <AddMovie addMovieModal={addMovieModal} /> */}
       <SearchContent>
         <SearchTitle>FIND YOUR MOVIE</SearchTitle>
