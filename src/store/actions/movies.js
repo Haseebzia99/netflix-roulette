@@ -1,4 +1,4 @@
-import axios from "../../axiosHelper";
+import axios from "../../core/axiosHelper";
 
 export const loadMovies = () => async (dispatch) => {
   //FETCH AXIOS

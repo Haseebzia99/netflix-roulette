@@ -1,11 +1,17 @@
 import React from "react";
-import Icon from "../../Icon/Icon";
+
+//components
 import SearchBanner from "../SearchBanner/SearchBanner";
 import MovieDetailsBanner from "../MovieDetailsBanner/MovieDetailsBanner";
+
+//icons
+import Icon from "../../Icon/Icon";
+
+//styles
 import {
   BannerContainerSearch,
   BannerContainerMovieDetails,
-} from "./indexStyles";
+} from "./styles";
 
 export default function Banner({
   movieModal,

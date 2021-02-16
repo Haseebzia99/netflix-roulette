@@ -1,5 +1,7 @@
 import React from "react";
-import { AddMovieButtonContainer, AddMovieButton } from "./indexStyles";
+
+//styles
+import { AddMovieButtonContainer, AddMovieButton } from "./styles";
 
 export const AddMovie = ({ addMovieModal }) => {
   return (
