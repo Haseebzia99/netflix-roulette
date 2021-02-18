@@ -8,8 +8,10 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.1",
+    "i18next": "^19.8.9",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-i18next": "^11.8.7",
     "react-redux": "^7.2.2",
     "react-scripts": "4.0.2",
     "redux": "^4.0.5",
@@ -35,7 +37,6 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "shared-config",
       "react-app/jest",
       "plugin:react-hooks/recommended"
     ],

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
+import { I18N_KEYS, TRANSLATIONS, I18N_LANGUAGES } from '../../core/I18Y/ru';
 
 //redux
 import { fetchSearch } from "../../store/actions/movies";
@@ -34,7 +35,7 @@ export const Search = () => {
         type="submit"
         primary
       >
-        SEARCH
+        {TRANSLATIONS[I18N_LANGUAGES.EN][I18N_KEYS.SEARCH]}
       </Button>
     </SearchContainer>
   );
