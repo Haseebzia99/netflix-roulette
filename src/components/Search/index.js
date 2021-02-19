@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { I18N_KEYS, TRANSLATIONS, I18N_LANGUAGES } from "../../core/I18Y";
 
 //redux
-import { fetchSearch } from "../../store/actions/movies";
+import { fetchSearch } from "../../store/thunks/movies";
 
 //styles
 import { Button } from "../../styles/buttonStyles";
