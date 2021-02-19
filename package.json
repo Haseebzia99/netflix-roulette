@@ -20,10 +20,11 @@
     "web-vitals": "^1.0.1"
   },
   "devDependencies": {
-    "shared-config": "^0.3.2",
+    "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-react-hooks": "^4.2.0",
     "gh-pages": "^3.1.0",
-    "prettier": "2.2.1"
+    "prettier": "2.2.1",
+    "shared-config": "^0.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -32,18 +33,12 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "react-scripts lint"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest",
-      "plugin:react-hooks/recommended"
-    ],
-    "rules": {
-      "semi": 0,
-      "no-console": 0
-    }
+    "eslint": "eslint .",
+    "eslint:fix": "npm run eslint -- --fix",
+    "prettier": "prettier --check .",
+    "prettier:fix": "prettier --write .",
+    "lint": "npm run eslint && npm run prettier",
+    "lint:fix": "npm run eslint:fix && npm run prettier:fix"
   },
   "browserslist": {
     "production": [
