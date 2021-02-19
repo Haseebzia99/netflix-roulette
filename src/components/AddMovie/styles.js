@@ -2,9 +2,9 @@ import styled from "styled-components";
 import { Button } from "../../styles/buttonStyles";
 
 export const AddMovieButtonContainer = styled.div`
-//   position: absolute;
-//   top: 0;
-//   right: -40px;
+  //   position: absolute;
+  //   top: 0;
+  //   right: -40px;
   padding-top: 15px;
 `;
 

@@ -1,5 +1,5 @@
 import axios from "../../core/axiosHelper";
-import ACTION_TYPES from '../actionTypes';
+import ACTION_TYPES from "../actionTypes";
 
 export const getMovieDetails = (id) => async (dispatch) => {
   dispatch({
@@ -10,6 +10,6 @@ export const getMovieDetails = (id) => async (dispatch) => {
 
   dispatch({
     type: ACTION_TYPES.GET_MOVIE_DETAILS,
-    payload: detailData.data
+    payload: detailData.data,
   });
 };

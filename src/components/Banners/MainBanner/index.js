@@ -8,10 +8,7 @@ import MovieDetailsBanner from "../MovieDetailsBanner/MovieDetailsBanner";
 import Icon from "../../Icon/Icon";
 
 //styles
-import {
-  BannerContainerSearch,
-  BannerContainerMovieDetails,
-} from "./styles";
+import { BannerContainerSearch, BannerContainerMovieDetails } from "./styles";
 
 export default function Banner({
   movieModal,

@@ -1,6 +1,6 @@
-import './App.css';
-import { AddMovie } from './components/AddMovie';
-import { SearchBanner } from './components/Banners/SearchBanner/index';
+import "./App.css";
+import { AddMovie } from "./components/AddMovie";
+import { SearchBanner } from "./components/Banners/SearchBanner/index";
 
 function App() {
   return (

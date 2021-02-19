@@ -22,7 +22,7 @@ export const sortByRuntime = (movies) => {
     return b.runtime - a.runtime;
   });
 
-  return{
+  return {
     type: "SORT_BY_TITLE",
     payload: {
       sortedMovies: sortedMoviesData,
