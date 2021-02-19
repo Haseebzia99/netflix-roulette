@@ -1,10 +1,12 @@
+import ACTION_TYPES from '../actionTypes'
+
 const initialState = {
     movieDetail: {},
   };
   
   const movieDetailsReducer = (state = initialState, action) => {
     switch (action.type) {
-      case "GET_MOVIE_DETAILS":
+      case ACTION_TYPES.GET_MOVIE_DETAILS:
         return {
           ...state,
           movieDetail: action.payload.movieDetail,
