@@ -27,7 +27,7 @@ export const Search = () => {
       <input
         value={textInput}
         onChange={inputHandler}
-        placeholder="What do you want to watch?"
+        placeholder={TRANSLATIONS[I18N_LANGUAGES.EN][I18N_KEYS.WHAT_DO_YOU_WANT_TO_WATCH]}
         type="text"
       />
       <Button

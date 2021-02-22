@@ -1,12 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+
 import { Provider } from "react-redux";
-import { applyMiddleware, createStore, compose } from "redux";
 import thunk from "redux-thunk";
+import { applyMiddleware, createStore, compose } from "redux";
+import rootReducer from "./store/reducers/index";
+
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import rootReducer from "./store/reducers/index";
+import "./index.css";
 
 const composeEnchancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(
