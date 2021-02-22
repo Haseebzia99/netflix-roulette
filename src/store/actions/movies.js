@@ -1,3 +1,5 @@
+import ACTION_TYPES from "../actionTypes";
+
 export const sortByTitle = (movies) => {
   const sortedMoviesData = movies.sort(function (a, b) {
     //first argument should appear before second argument
@@ -9,7 +11,7 @@ export const sortByTitle = (movies) => {
   });
 
   return {
-    type: "SORT_BY_TITLE",
+    type: ACTION_TYPES.SORT_BY_TITLE,
     payload: {
       sortedMovies: sortedMoviesData,
     },
@@ -23,7 +25,7 @@ export const sortByRuntime = (movies) => {
   });
 
   return {
-    type: "SORT_BY_TITLE",
+    type: ACTION_TYPES.SORT_BY_RUNTIME,
     payload: {
       sortedMovies: sortedMoviesData,
     },
@@ -37,7 +39,7 @@ export const sortByRating = (movies) => {
   });
 
   return {
-    type: "SORT_BY_RATING",
+    type: ACTION_TYPES.SORT_BY_RATING,
     payload: {
       sortedMovies: sortedMoviesData,
     },
@@ -52,7 +54,7 @@ export const sortByReleaseDate = (movies) => {
   });
 
   return {
-    type: "SORT_BY_RELEASE_DATE",
+    type: ACTION_TYPES.SORT_BY_RELEASE_DATE,
     payload: {
       sortedMovies: sortedMoviesData,
     },
