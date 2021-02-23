@@ -4,7 +4,7 @@ export const SearchContainer = styled.form`
   display: flex;
   margin-top: 30px;
   input {
-    width: 100%;
+    width: 40%;
     padding: 1rem;
     outline: none;
     border-radius: 5px;

@@ -1,4 +1,4 @@
-const movies = [
+export const movies = [
     {
       id: 1,
       title: "Pulp Fiction",
@@ -95,6 +95,4 @@ const movies = [
       runtime: 139,
     },
   ];
-  
-  export default movies;
   

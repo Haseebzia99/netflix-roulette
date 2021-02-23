@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import movieBackground from '../../../assets/images/banner.jpg'
+import movieBackground from "../../../assets/images/banner.jpg";
 
 export const SearchBannerContainer = styled.div`
   z-index: 1000;
@@ -9,12 +9,11 @@ export const SearchBannerContainer = styled.div`
   height: 50vh;
   width: 100%;
   background: url(${movieBackground}) no-repeat center center fixed;
-`
-;
+`;
 
 export const SearchContent = styled.div`
   margin-top: 70px;
-//   position: absolute;
+  //   position: absolute;
   width: 100%;
 `;
 

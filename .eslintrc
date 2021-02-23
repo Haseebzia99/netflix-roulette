@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "react-app",
+    "react-app/jest",
+    "plugin:react-hooks/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "plugins": ["import"],
+  "rules": {
+    "semi": 2,
+    "no-console": 1,
+    "import/no-unresolved": 1,
+    "import/order": 2,
+    "import/first": 2
+  }
+}

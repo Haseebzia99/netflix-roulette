@@ -1,8 +1,13 @@
 import React, { useState } from "react";
-import { Button } from "../../styles/buttonStyles";
-import { SearchContainer } from "./indexStyles";
-import { fetchSearch } from "../../actions/moviesAction";
 import { useDispatch } from "react-redux";
+import { I18N_KEYS, TRANSLATIONS, I18N_LANGUAGES } from "../../core/I18Y";
+
+//redux
+import { fetchSearch } from "../../store/thunks/movies";
+
+//styles
+import { Button } from "../../styles/buttonStyles";
+import { SearchContainer } from "./styles";
 
 export const Search = () => {
   const dispatch = useDispatch();
@@ -22,7 +27,7 @@ export const Search = () => {
       <input
         value={textInput}
         onChange={inputHandler}
-        placeholder="What do you want to watch?"
+        placeholder={TRANSLATIONS[I18N_LANGUAGES.EN][I18N_KEYS.WHAT_DO_YOU_WANT_TO_WATCH]}
         type="text"
       />
       <Button
@@ -30,7 +35,7 @@ export const Search = () => {
         type="submit"
         primary
       >
-        SEARCH
+        {TRANSLATIONS[I18N_LANGUAGES.EN][I18N_KEYS.SEARCH]}
       </Button>
     </SearchContainer>
   );

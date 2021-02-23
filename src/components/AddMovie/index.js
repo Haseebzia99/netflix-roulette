@@ -1,11 +1,13 @@
 import React from "react";
-import { AddMovieButtonContainer, AddMovieButton } from "./indexStyles";
+import { I18N_KEYS, TRANSLATIONS, I18N_LANGUAGES } from "../../core/I18Y";
+//styles
+import { AddMovieButtonContainer, AddMovieButton } from "./styles";
 
 export const AddMovie = ({ addMovieModal }) => {
   return (
     <AddMovieButtonContainer>
       <AddMovieButton red onClick={addMovieModal}>
-        + ADD MOVIE
+      {TRANSLATIONS[I18N_LANGUAGES.EN][I18N_KEYS.ADD_MOVIE]}
       </AddMovieButton>
     </AddMovieButtonContainer>
   );
