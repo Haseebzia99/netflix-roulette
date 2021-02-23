@@ -1,9 +1,9 @@
-import axios from "../../core/axiosHelper";
+import instance from "../../core/axiosHelper";
 import ACTION_TYPES from "../actionTypes";
 
 export const loadMovies = () => async (dispatch) => {
   //FETCH AXIOS
-  const allMoviesData = await axios.get("/movies?limit=12");
+  const allMoviesData = await instance.get("/movies?limit=12");
   dispatch({
     type: ACTION_TYPES.FETCH_MOVIES,
     payload: {
@@ -16,7 +16,7 @@ export const fetchSearch = (movie_name) => async (dispatch) => {
   dispatch({
     type: ACTION_TYPES.INIT_FETCH_MOVIES,
   });
-  const searchMovieData = await axios.get(
+  const searchMovieData = await instance.get(
     `/movies?search=${movie_name}&searchBy=title`
   );
   dispatch({
@@ -31,7 +31,7 @@ export const fetchSorted = (movie_genre) => async (dispatch) => {
   dispatch({
     type: ACTION_TYPES.INIT_FETCH_MOVIES,
   });
-  const sortedMoviesData = await axios.get(
+  const sortedMoviesData = await instance.get(
     `/movies?limit=100&searchBy=genres&filter=${movie_genre}`
   );
   dispatch({
