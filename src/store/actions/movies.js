@@ -12,9 +12,7 @@ export const sortByTitle = (movies) => {
 
   return {
     type: ACTION_TYPES.SORT_BY_TITLE,
-    payload: {
       sortedMovies: sortedMoviesData,
-    },
   };
 };
 
@@ -26,9 +24,7 @@ export const sortByRuntime = (movies) => {
 
   return {
     type: ACTION_TYPES.SORT_BY_RUNTIME,
-    payload: {
       sortedMovies: sortedMoviesData,
-    },
   };
 };
 
@@ -40,9 +36,7 @@ export const sortByRating = (movies) => {
 
   return {
     type: ACTION_TYPES.SORT_BY_RATING,
-    payload: {
       sortedMovies: sortedMoviesData,
-    },
   };
 };
 
@@ -55,8 +49,6 @@ export const sortByReleaseDate = (movies) => {
 
   return {
     type: ACTION_TYPES.SORT_BY_RELEASE_DATE,
-    payload: {
       sortedMovies: sortedMoviesData,
-    },
   };
 };
