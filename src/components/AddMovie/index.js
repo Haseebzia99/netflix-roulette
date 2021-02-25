@@ -59,26 +59,26 @@ export const AddMovie = () => {
       {(formik) => {
         return (
           <ModalContainer>
-            <ModalTitle>Title</ModalTitle>
+            <ModalTitle>{TRANSLATIONS[I18N_LANGUAGES.EN][I18N_KEYS.TITLE]}</ModalTitle>
             <ModalInput name="title" type="text" />
             <ErrorText name="title" component="div" />
-            {/* Release Date */}
-            <ModalTitle>Release Date</ModalTitle>
+
+            <ModalTitle>{TRANSLATIONS[I18N_LANGUAGES.EN][I18N_KEYS.RELEASE_DATE]}</ModalTitle>
             <SelectorContainer>
               <DateSelector
                 control="release_date"
                 name="date"
-                placeholderText="Select Date"
+                placeholderText={TRANSLATIONS[I18N_LANGUAGES.EN][I18N_KEYS.SELECT_DATE]}
               />
               <IconBox size={20} />
             </SelectorContainer>
             <ErrorText name="date" component="div" />
-            {/* Movie URL */}
-            <ModalTitle>Movie Url</ModalTitle>
+
+            <ModalTitle>{TRANSLATIONS[I18N_LANGUAGES.EN][I18N_KEYS.MOVIE_URL]}</ModalTitle>
             <ModalInput name="poster_path" type="text" />
             <ErrorText name="poster_path" component="div" />
-            {/* Genre */}
-            <ModalTitle>Genre</ModalTitle>
+
+            <ModalTitle>{TRANSLATIONS[I18N_LANGUAGES.EN][I18N_KEYS.GENRE]}</ModalTitle>
             <SelectorContainer>
               <DropDown
                 control="select"
@@ -88,21 +88,20 @@ export const AddMovie = () => {
               <ArrowBox size={20} />
             </SelectorContainer>
             <ErrorText name="genre" component="div" />
-            {/* Overview */}
-            <ModalTitle>Overview</ModalTitle>
+
+            <ModalTitle>{TRANSLATIONS[I18N_LANGUAGES.EN][I18N_KEYS.OVERVIEW]}</ModalTitle>
             <ModalInput name="overview" type="text" />
             <ErrorText name="overview" component="div" />
-            {/* Title */}
-            <ModalTitle>Runtime</ModalTitle>
+
+            <ModalTitle>{TRANSLATIONS[I18N_LANGUAGES.EN][I18N_KEYS.RUNTIME]}</ModalTitle>
             <ModalInput name="runtime" type="text" />
             <ErrorText name="runtime" component="div" />
-            {/* Runtime */}
+
             <ButtonContainer>
-              <ResetButton onClick={onReset}>RESET</ResetButton>
-              <SubmitButton type="submit" primary>
-                SUBMIT
-              </SubmitButton>
+              <ResetButton onClick={onReset}>{TRANSLATIONS[I18N_LANGUAGES.EN][I18N_KEYS.RESET]}</ResetButton>
+              <SubmitButton type="submit" primary>{TRANSLATIONS[I18N_LANGUAGES.EN][I18N_KEYS.SUBMIT]}</SubmitButton>
             </ButtonContainer>
+
           </ModalContainer>
         );
       }}

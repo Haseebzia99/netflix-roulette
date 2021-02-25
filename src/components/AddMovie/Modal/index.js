@@ -1,4 +1,5 @@
 import React from 'react';
+import { I18N_KEYS, TRANSLATIONS, I18N_LANGUAGES } from "../../../core/I18Y";
 
 const MODAL_STYLES = {
   position: 'fixed',
@@ -13,7 +14,7 @@ export const AddMovieModal = ({ open, children, onClose }) => {
   if (!open) return null;
     return (
       <div style={MODAL_STYLES}>
-        <button onClick={onClose}> Close Modal </button>
+        <button onClick={onClose}>{TRANSLATIONS[I18N_LANGUAGES.EN][I18N_KEYS.CLOSE_MODAL]}</button>
         {children}
       </div>
     ); 
