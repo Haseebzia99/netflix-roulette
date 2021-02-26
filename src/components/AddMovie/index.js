@@ -108,9 +108,9 @@ export const AddMovie = () => {
       </AddMovieButton>
 
       <AddMovieModal isOpen={isOpen} onClose={() => setIsOpen(false)}>
-      <Formik initialValues={initialValues} >
-        {renderFormik}
-      </Formik>
+        <Formik initialValues={initialValues} >
+          {renderFormik}
+        </Formik>
       </AddMovieModal>
 
     </AddMovieButtonContainer>
