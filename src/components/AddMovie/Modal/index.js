@@ -10,9 +10,8 @@ const MODAL_STYLES = {
   zIndex: 1000
 };
 
-export const AddMovieModal = ({ open, children, onClose }) => {
-  if (!open) return null;
-    return (
+export const AddMovieModal = ({ isOpen, children, onClose }) => {
+  return ( (!isOpen) ? null :
       <div style={MODAL_STYLES}>
         <button onClick={onClose}>{TRANSLATIONS[I18N_LANGUAGES.EN][I18N_KEYS.CLOSE_MODAL]}</button>
         {children}

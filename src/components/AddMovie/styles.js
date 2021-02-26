@@ -1,9 +1,12 @@
 import styled from "styled-components";
 import { Field, Form, ErrorMessage } from "formik";
+
 import { TiArrowSortedDown } from "react-icons/ti";
 import { FaCalendarAlt } from "react-icons/fa";
+
 import { Button } from "../../styles/buttonStyles";
 import { darkRed, greyBackground, blackBackground } from "../../styles/colors";
+
 import Select from "./select";
 import DatePicker from "./dateselector";
 

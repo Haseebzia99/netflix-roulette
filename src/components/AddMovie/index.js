@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+
 import { Formik } from 'formik';
+
 import { I18N_KEYS, TRANSLATIONS, I18N_LANGUAGES } from "../../core/I18Y";
 
 import { AddMovieModal } from './Modal';
@@ -54,7 +56,7 @@ export const AddMovie = () => {
       {TRANSLATIONS[I18N_LANGUAGES.EN][I18N_KEYS.ADD_MOVIE]}
       </AddMovieButton>
 
-      <AddMovieModal open={isOpen} onClose={() => setIsOpen(false)}>
+      <AddMovieModal isOpen={isOpen} onClose={() => setIsOpen(false)}>
       <Formik initialValues={initialValues} >
       {(formik) => {
         return (
