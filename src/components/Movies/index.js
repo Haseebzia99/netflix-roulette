@@ -1,6 +1,5 @@
 import React from "react";
-import {BrowserRouter as Router, Link} from 'react-router-dom';
-import { error } from "../../components/404error";
+import { Link } from "react-router-dom";
 
 import {
   MovieContainer,
@@ -13,9 +12,8 @@ import {
 
 export const Movie = () => {
   return (
-    <>        
-    <Router>
-      <Link to="/404error" component={error}>
+    <>       
+    <Link to="/error">
         <MovieContainer>
             <TitleContainer>
                 <Title>Movie</Title>
@@ -25,8 +23,7 @@ export const Movie = () => {
             <Description>This is a movies test</Description>
             </DescriptionContainer>
         </MovieContainer>
-      </Link>
-    </Router>
+    </Link>
     </>
   );
 };
