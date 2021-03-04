@@ -18,6 +18,8 @@ const I18N_KEYS = {
 const I18N_LANGUAGES = { RU: "RU", EN: "EN" };
 
 const TRANSLATIONS = {
+
+
   [I18N_LANGUAGES.RU]: {
     [I18N_KEYS.SEARCH]: "поиск",
     [I18N_KEYS.ADD_MOVIE]: "Добавить фильм",
@@ -51,6 +53,8 @@ const TRANSLATIONS = {
     [I18N_KEYS.SELECT_DATE]: "Select Date",
     [I18N_KEYS.CLOSE_MODAL]: "Close Modal"
   },
+
+  
 };
 
 export { I18N_KEYS, TRANSLATIONS, I18N_LANGUAGES };
