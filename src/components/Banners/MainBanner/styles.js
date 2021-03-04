@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import movieBackground from "../../../images/movie-banner.jpg";
+import movieBackground from "../../../assets/images/banner.jpg";
 
 export const BannerContainer = styled.div`
   height: 40vh;
