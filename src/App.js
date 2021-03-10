@@ -1,16 +1,18 @@
-import { SearchBanner } from "./components/Banners/SearchBanner/index";
-import { AddMovie } from "./components/AddMovie/index";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Error } from "./components/404error/index";
+import { Home } from "./components/Home";
 
 import "./App.css";
 
 function App() {
-
   return (
     <div className="App">
-      <div className="netflix-header">
-        <SearchBanner />
-        <AddMovie />
-      </div>
+      <Router>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/error" component={Error} />
+        </Switch>
+      </Router>
     </div>
   );
 }

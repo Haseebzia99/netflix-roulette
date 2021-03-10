@@ -26,7 +26,9 @@ export const SearchBanner = ({
       <img src={logo} className="netflix--logo" alt="nt-log" />
       {/* <AddMovie addMovieModal={addMovieModal} /> */}
       <SearchContent>
-        <SearchTitle>{TRANSLATIONS[I18N_LANGUAGES.EN][I18N_KEYS.FIND_YOUR_MOVIE]}</SearchTitle>
+        <SearchTitle>
+          {TRANSLATIONS[I18N_LANGUAGES.EN][I18N_KEYS.FIND_YOUR_MOVIE]}
+        </SearchTitle>
         <Search />
       </SearchContent>
 

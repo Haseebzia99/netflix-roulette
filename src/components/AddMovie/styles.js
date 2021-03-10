@@ -22,7 +22,6 @@ export const AddMovieButton = styled(Button)`
   font-weight: bold;
 `;
 
-
 export const ModalContainer = styled(Form)`
   margin: 0 3rem;
   padding-top: 20px;
