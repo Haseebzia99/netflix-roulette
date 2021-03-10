@@ -12,14 +12,12 @@ const I18N_KEYS = {
   RESET: "RESET",
   SUBMIT: "SUBMIT",
   SELECT_DATE: " SELECT DATE",
-  CLOSE_MODAL: "CLOSE MODAL"
+  CLOSE_MODAL: "CLOSE MODAL",
 };
 
 const I18N_LANGUAGES = { RU: "RU", EN: "EN" };
 
 const TRANSLATIONS = {
-
-
   [I18N_LANGUAGES.RU]: {
     [I18N_KEYS.SEARCH]: "поиск",
     [I18N_KEYS.ADD_MOVIE]: "Добавить фильм",
@@ -34,7 +32,7 @@ const TRANSLATIONS = {
     [I18N_KEYS.RESET]: "перезагрузить",
     [I18N_KEYS.SUBMIT]: "Разместить",
     [I18N_KEYS.SELECT_DATE]: "выберите дату",
-    [I18N_KEYS.CLOSE_MODAL]: "Закрыть модальное окно"
+    [I18N_KEYS.CLOSE_MODAL]: "Закрыть модальное окно",
   },
 
   [I18N_LANGUAGES.EN]: {
@@ -51,10 +49,8 @@ const TRANSLATIONS = {
     [I18N_KEYS.RESET]: "Reset",
     [I18N_KEYS.SUBMIT]: "Submit",
     [I18N_KEYS.SELECT_DATE]: "Select Date",
-    [I18N_KEYS.CLOSE_MODAL]: "Close Modal"
+    [I18N_KEYS.CLOSE_MODAL]: "Close Modal",
   },
-
-  
 };
 
 export { I18N_KEYS, TRANSLATIONS, I18N_LANGUAGES };

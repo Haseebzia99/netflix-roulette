@@ -16,10 +16,7 @@ export default function Banner({
   setMovieModal,
 }) {
   if (switchBanner) {
-    return (
-      <BannerContainerMovieDetails>
-      </BannerContainerMovieDetails>
-    );
+    return <BannerContainerMovieDetails></BannerContainerMovieDetails>;
   }
   return (
     <BannerContainerSearch>

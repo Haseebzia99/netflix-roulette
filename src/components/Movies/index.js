@@ -12,18 +12,18 @@ import {
 
 export const Movie = () => {
   return (
-    <>       
-    <Link to="/error">
+    <>
+      <Link to="/error">
         <MovieContainer>
-            <TitleContainer>
-                <Title>Movie</Title>
-                <Year>2021</Year>
-            </TitleContainer>    
-            <DescriptionContainer>
+          <TitleContainer>
+            <Title>Movie</Title>
+            <Year>2021</Year>
+          </TitleContainer>
+          <DescriptionContainer>
             <Description>This is a movies test</Description>
-            </DescriptionContainer>
+          </DescriptionContainer>
         </MovieContainer>
-    </Link>
+      </Link>
     </>
   );
 };
