@@ -2,7 +2,6 @@
   "name": "netflix-roulette",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://{haseebzia99}.github.io/{netflix-roulette}",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/user-event": "^12.1.10",
@@ -28,9 +27,9 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-react-hooks": "^4.2.0",
     "gh-pages": "^3.1.0",
-    "jest-dom": "^4.0.0",
     "prettier": "2.2.1",
     "react-test-render": "^1.1.2",
+    "react-test-renderer": "^17.0.1",
     "shared-config": "^0.3.2"
   },
   "scripts": {
@@ -38,7 +37,8 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest src",
+    "test:watch": "npm run test -- --watch",
     "eject": "react-scripts eject",
     "eslint": "eslint ./src",
     "eslint:fix": "npm run eslint -- --fix",

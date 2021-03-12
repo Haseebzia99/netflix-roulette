@@ -3,7 +3,7 @@ import movieBackground from "../../../assets/images/banner.jpg";
 
 export const BannerContainer = styled.div`
   height: 40vh;
-  background: url(${movieBackground}) no-repeat center center fixed;
+  background: url(${movieBackground}) no-repeat center center;
   background-size: cover;
   /* background-size: 100% 100%; */
   /* background: grey; */

@@ -3,7 +3,7 @@ import movieBackground from "../../../assets/images/banner.jpg";
 
 export const SearchBannerContainer = styled.div`
   z-index: 1000;
-  position: relative;
+  // position: relative;
   // max-width: 400rem;
   margin: auto;
   height: 50vh;

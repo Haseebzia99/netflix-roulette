@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import {
-  MovieContainer,
   Title,
   TitleContainer,
   DescriptionContainer,
@@ -10,19 +9,17 @@ import {
   Year,
 } from "./styles";
 
-export const Movie = () => {
+export const Movie = (moviesDetail) => {
   return (
     <>
       <Link to="/error">
-        <MovieContainer>
           <TitleContainer>
-            <Title>Movie</Title>
-            <Year>2021</Year>
+            <Title>{moviesDetail.title}</Title>
+            <Year>{moviesDetail.year}</Year>
           </TitleContainer>
           <DescriptionContainer>
-            <Description>This is a movies test</Description>
+            <Description>{moviesDetail.description}</Description>
           </DescriptionContainer>
-        </MovieContainer>
       </Link>
     </>
   );
