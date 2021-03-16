@@ -2,11 +2,7 @@
   "name": "netflix-roulette",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://{haseebzia99}.github.io/{netflix-roulette}",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.1",
     "formik": "^2.2.6",
     "i18next": "^19.8.9",
@@ -24,6 +20,11 @@
     "web-vitals": "^1.0.1"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.4.1",
+    "enzyme": "^3.11.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-react-hooks": "^4.2.0",
     "gh-pages": "^3.1.0",
