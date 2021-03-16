@@ -19,7 +19,10 @@ export const Movie = (moviesDetail) => {
             <Title>{moviesDetail.title}</Title>
           </TitleContainer>
             <Year>{moviesDetail.year}</Year>
-            <Description>{moviesDetail.description}</Description>
+            <DescriptionContainer>
+              <Description>{moviesDetail.description}</Description>
+            </DescriptionContainer>
+ 
         </MovieContainer>
       </Link>
     </>

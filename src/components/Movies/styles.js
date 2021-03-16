@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { darkWhite, grey } from "../../styles/colors";
+// import { darkWhite, grey } from "../../styles/colors";
 
 export const MovieContainer = styled.div`
   justify-content: center;
