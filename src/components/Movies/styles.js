@@ -5,26 +5,27 @@ import { darkWhite, grey } from "../../styles/colors";
 export const MovieContainer = styled.div`
   justify-content: center;
   margin: 1rem 0;
+  height: 100px;
 `;
 
 export const Title = styled.h3`
   font-size: 1.8rem;
-  color: ${darkWhite};
+  color: black;
   font-weight: 400;
 `;
 
 export const Description = styled.div`
   font-size: 1.3rem;
-  color: ${grey};
+  color: black;
   font-weight: 400;
 `;
 
 export const Year = styled.div`
-  border: 1px solid ${darkWhite};
+  border: 1px solid black;
   padding: 0.25rem 1rem;
   border-radius: 0.4rem;
   font-size: 1.3rem;
-  color: ${darkWhite};
+  color: black;
 `;
 
 export const TitleContainer = styled.div`

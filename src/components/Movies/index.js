@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import {
   Title,
+  MovieContainer,
   TitleContainer,
   DescriptionContainer,
   Description,
@@ -13,13 +14,13 @@ export const Movie = (moviesDetail) => {
   return (
     <>
       <Link to="/error">
+        <MovieContainer>
           <TitleContainer>
             <Title>{moviesDetail.title}</Title>
-            <Year>{moviesDetail.year}</Year>
           </TitleContainer>
-          <DescriptionContainer>
+            <Year>{moviesDetail.year}</Year>
             <Description>{moviesDetail.description}</Description>
-          </DescriptionContainer>
+        </MovieContainer>
       </Link>
     </>
   );
