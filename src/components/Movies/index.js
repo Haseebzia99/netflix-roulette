@@ -2,26 +2,27 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import {
-  MovieContainer,
   Title,
+  MovieContainer,
   TitleContainer,
   DescriptionContainer,
   Description,
   Year,
 } from "./styles";
 
-export const Movie = () => {
+export const Movie = (moviesDetail) => {
   return (
     <>
       <Link to="/error">
         <MovieContainer>
           <TitleContainer>
-            <Title>Movie</Title>
-            <Year>2021</Year>
+            <Title>{moviesDetail.title}</Title>
           </TitleContainer>
-          <DescriptionContainer>
-            <Description>This is a movies test</Description>
-          </DescriptionContainer>
+            <Year>{moviesDetail.year}</Year>
+            <DescriptionContainer>
+              <Description>{moviesDetail.description}</Description>
+            </DescriptionContainer>
+ 
         </MovieContainer>
       </Link>
     </>
